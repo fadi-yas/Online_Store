@@ -10,78 +10,15 @@
     <h1>Rock Paper Scissors</h1>
  
     <button onclick="
-    randomNumber = Math.random();
-    if(randomNumber >=0 && randomNumber <= 1/3){
-        computerMove = 'Rock';
-    }
-    else if(randomNumber > 1/3 && randomNumber <= 2/3){
-        computerMove = 'Paper';
-    }
-    else{
-        computerMove = 'Scissors';
-    }
-    if(computerMove === 'rock'){
-        result = 'tie';
-    }
-    else if(computerMove === 'paper'){
-        result = 'You lose.';
-    }
-    else{
-        result = 'You Win.';
-    }
-    alert(`The computer choose ${computerMove}, your choose is Rock, ${result}`);
+     PlayGame('Rock');
     ">Rock</button>
 
-
     <button onclick="
-    randomNumber = Math.random();
-    if(randomNumber >=0 && randomNumber <= 1/3){
-        computerMove = 'Rock';
-    }
-    else if(randomNumber > 1/3 && randomNumber <= 2/3){
-        computerMove = 'Paper';
-    }
-    else{
-        computerMove = 'Scissors';
-    }
-
-    if(computerMove === 'rock'){
-        result = 'You win.';
-    }
-    else if(computerMove === 'Paper'){
-        result = 'tie';
-    }
-    else{
-        result = 'You lose.';
-    }
-    alert(`The computer choose ${computerMove}, your choose is Paper, ${result}`);
-    
+     PlayGame('Paper');
     ">Paper</button>
 
-
     <button onclick="
-    randomNumber = Math.random();
-    if(randomNumber >=0 && randomNumber <= 1/3){
-        computerMove = 'Rock';
-    }
-    else if(randomNumber > 1/3 && randomNumber <= 2/3){
-        computerMove = 'Paper';
-    }
-    else{
-        computerMove = 'Scissors';
-    }
-
-    if(computerMove === 'Rock'){
-        result = 'You lose.';
-    }
-    else if(computerMove === 'Paper'){
-        result = 'You win.';
-    }
-    else{
-        result = 'tie.';
-    }
-    alert(`The computer choose ${computerMove}, your choose is Scissors, ${result}`);
-    
+     PlayGame('Scissors')
     ">Scissors</button>
 </body>
 <script src="script.js"></script>
