@@ -20,6 +20,21 @@
     <button onclick="
      PlayGame('Scissors')
     ">Scissors</button>
+
+    <p class="game_score"></p>
+    <p class="result"></p>
+    <p class="chooise"></p>
+
+    <button onclick="
+     score.wins=0;
+     score.loses=0;
+     score.ties=0;
+     localStorage.removeItem('score'); 
+     resultElement();
+     ">Reset Score
+    </button>
+
+
 </body>
 <script src="script.js"></script>
 </html>
